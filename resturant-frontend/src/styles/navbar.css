@@ -1,0 +1,173 @@
+/* Apply font globally */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Navbar container */
+.navbar {
+  display: flex;
+ 
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 10px 30px;   
+  height: 50px;
+
+  background: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+}
+
+/* Logo */
+.logo {
+  font-size: 20px;
+  font-weight: 600;
+  color: #2563EB;
+  cursor: pointer;
+}
+
+/* Right section */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Links */
+.nav-links span {
+  font-size: 14px;
+  color: #374151;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.nav-links span:hover {
+  color: #2563EB;
+}
+
+/* Login button */
+.login-btn {
+  background: #2563EB;
+  color: white;
+
+  border: none;
+  padding: 6px 16px;   /* 🔥 smaller + modern */
+  border-radius: 8px;
+
+  font-size: 14px;
+  font-weight: 500;
+
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login-btn:hover {
+  background: #1E40AF;
+}
+
+/* 📱 Tablet View */
+@media (max-width: 768px) {
+
+  .navbar {
+    padding: 10px 20px;
+  }
+
+  .logo {
+    font-size: 18px;
+  }
+
+  .nav-links {
+    gap: 15px;
+  }
+
+  .nav-links span {
+    font-size: 13px;
+  }
+
+  .login-btn {
+    padding: 5px 12px;
+    font-size: 13px;
+  }
+}
+
+
+/* 📱 Mobile View */
+@media (max-width: 480px) {
+
+  .navbar {
+    padding: 10px 15px;
+  }
+
+  .logo {
+    font-size: 16px;
+  }
+
+  .nav-links {
+    gap: 10px;
+  }
+
+  .nav-links span {
+    display: none;  /* 🔥 Hide Home/Cart text */
+  }
+
+  .login-btn {
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+}
+/* 👤 Profile icon */
+.profile {
+  position: relative;
+}
+
+.profile span {
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* 📂 Dropdown menu */
+.dropdown {
+  position: absolute;
+  top: 40px;
+  right: 0;
+
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 10px 0;
+  width: 180px;
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+}
+
+/* Dropdown items */
+.dropdown p {
+  padding: 10px 15px;
+  margin: 0;
+  font-size: 14px;
+  color: #374151;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.dropdown p:hover {
+  background: #f3f4f6;
+  color: #2563EB;
+}
+
+/* Email */
+.email {
+  font-weight: 600;
+  font-size: 13px;
+  color: #111827;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+/* Divider */
+.dropdown hr {
+  margin: 6px 0;
+  border: none;
+  border-top: 1px solid #e5e7eb;
+}

@@ -1,0 +1,55 @@
+.category-section {
+  padding: 20px 30px;
+}
+
+.category-section h2 {
+  margin-bottom: 30px;
+  font-weight: 600;
+  color: #1E3A8A;
+}
+
+/* Scroll container */
+.category-container {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+  
+}
+
+/* Hide scrollbar */
+.category-container::-webkit-scrollbar {
+  display: none;
+}
+
+/* Card */
+.category-card {
+  min-width: 200px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Image */
+.category-card img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+
+  border: 3px solid transparent;
+  transition: 0.3s;
+}
+
+/* Text */
+.category-card p {
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* Hover effect */
+.category-card:hover img {
+  border: 3px solid #2563EB;
+  transform: scale(1.05);
+}
