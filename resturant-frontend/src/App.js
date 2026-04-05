@@ -1,6 +1,6 @@
 
 import './App.css';
-import { BrowserRouter,Route,Router,Routes } from "react-router-dom";
+import { BrowserRouter as Router,Route,Routes } from "react-router-dom";
 import Home from './Pages/Home';
 import Register from './Pages/Register';
 import Login from './Pages/Login';
@@ -12,9 +12,7 @@ import CategoryPage from './Pages/CategoryPage';
 function App() {
   return (
     <div className="App">
-   <BrowserRouter>
-     
-
+   <Router>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/register" element={<Register />} />
@@ -25,7 +23,10 @@ function App() {
         <Route path="/category/:name" element={<CategoryPage />} />
       </Routes>
 
-    </BrowserRouter>
+    </Router>
+
+     
+   
     </div>
   );
 }
