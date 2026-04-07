@@ -1,9 +1,8 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "https://resturant-application-qajd.vercel.app/api"
+  baseURL: "https://resturant-backend.onrender.com/api"
 });
-
 
 API.interceptors.request.use((req) => {
   const token = localStorage.getItem("token");
